@@ -10,12 +10,22 @@ html,
 body,
 #root {
   @apply w-full h-full bg-zinc-950;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 #root {
   width: 100%;
   height: 100%;
   @apply flex items-center justify-center bg-clip-content bg-cover bg-no-repeat bg-center bg-fixed bg-[url(./assets/images/background.jpg)];
+}
+
+iframe {
+  position: fixed;
+  pointer-events: none;
+  @apply w-full h-full
 }
 
 .main-container {
@@ -27,7 +37,7 @@ nav * {
 }
 
 nav {
-  @apply border-b-1 bg-zinc-950/90 text-slate-50 text-lg uppercase w-full mask-b-from-50%;
+  @apply border-b-2 border-slate-950 bg-zinc-950 text-slate-50 text-lg uppercase w-full mask-radial-from-15% mask-radial-at-bottom bg-linear-65;
 }
 
 nav ul {
@@ -40,6 +50,10 @@ nav ul {
 
 .nav-link-ticket {
   @apply col-start-4 col-end-9 text-end pr-4;
+}
+
+.anchor-ticket {
+  @apply border outline-slate-50 p-2 rounded-lg;
 }
 
 .watch-trailer-button {
