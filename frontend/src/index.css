@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+@import "tailwindcss";
+
+
+* {
+  @apply p-0 m-0 box-border;
+}
+
+html,
+body,
+#root {
+  @apply w-full h-full bg-zinc-950;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  @apply flex items-center justify-center bg-clip-content bg-cover bg-no-repeat bg-center bg-fixed bg-[url(./assets/images/background.jpg)];
+}
+
+.main-container {
+  @apply h-full w-xl flex justify-between flex-col items-center;
+}
+
+nav * {
+  @apply w-full;
+}
+
+nav {
+  @apply border-b-1 bg-zinc-950/90 text-slate-50 text-lg uppercase w-full mask-b-from-50%;
+}
+
+nav ul {
+  @apply grid grid-cols-8 grid-rows-1 h-full;
+}
+
+.nav-link {
+  @apply p-4;
+}
+
+.nav-link-ticket {
+  @apply col-start-4 col-end-9 text-end pr-4;
+}
+
+.watch-trailer-button {
+  @apply uppercase text-slate-50 font-bold border border-slate-100/50 rounded-lg p-4 w-50 mb-4 shadow-md shadow-gray-950/50 ring ring-gray-500/50 opacity-55 transition delay-150 duration-270 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-gray-950 hover:text-slate-50;
+}
